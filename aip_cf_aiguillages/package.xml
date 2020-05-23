@@ -1,0 +1,19 @@
+<package>
+  <name>aip_cf_aiguillages</name>
+  <description>commande node</description>
+  <maintainer email="etudiants-ups@univ-tlse3.fr">Dato Bruno</maintainer>
+  <version>3.1.2</version>
+  <author>Abdellah, Bruno, Eugène</author>
+  <license>GPLv3</license>
+  <url>http://www.fr</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>libopencv-dev</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>message_runtime</run_depend>
+</package>

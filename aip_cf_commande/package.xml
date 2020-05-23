@@ -1,0 +1,24 @@
+<package>
+  <name>aip_cf_commande</name>
+  <description>commande node</description>
+  <maintainer email="projetlong.aip@gmail.com">Projet Long ENSEEIHT</maintainer>
+  <version>4.0.0</version>
+  <author>Projet Long N7 2017</author>
+  <license>GPLv3</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>libopencv-dev</build_depend>
+  <build_depend>aip_cf_robots</build_depend>
+  <build_depend>aip_cf_commande_locale</build_depend>
+  <build_depend>aip_cf_shuttles</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <build_depend>aip_cf_robots</build_depend>
+  <build_depend>aip_cf_commande_locale</build_depend>
+  <build_depend>aip_cf_shuttles</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>message_runtime</run_depend>
+</package>

@@ -1,0 +1,24 @@
+<package>
+  <name>aip_cf_commande_locale</name>
+  <description>commande_locale node</description>
+  <maintainer email="simon.demmer@etu.enseeiht.fr">Simon Demmer</maintainer>
+  <version>3.1.2</version>
+  <author>Emilie, Thibaut, Clement et Simon</author>
+  <license>GPLv3</license>
+  <url>http://www.fr</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>libopencv-dev</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>scheduling</build_depend>
+  <build_depend>aip_cf_shuttles</build_depend>
+  <build_depend>aip_cf_aiguillages</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <build_depend>aip_cf_shuttles</build_depend>
+  <build_depend>aip_cf_aiguillages</build_depend>
+
+</package>

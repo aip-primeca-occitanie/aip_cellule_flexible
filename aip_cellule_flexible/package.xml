@@ -1,0 +1,13 @@
+<package format="3">
+  <name>aip_cellule_flexible</name>
+  <version>0.0.1</version>
+  <description>
+    This metapackage provides the need packages to interact with the factory cell.
+  </description>
+  <maintainer email="marco@univ-tlse3.fr"></maintainer>
+  <license>BSD</license>
+  
+  <export>
+    <metapackage />
+  </export>
+</package>

@@ -1,0 +1,6 @@
+<launch>
+
+<node pkg="robots" name="robot3" type="robot3" />
+<node pkg="robots" name="robot4" type="robot4" />
+
+</launch>

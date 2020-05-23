@@ -1,0 +1,16 @@
+<launch>
+
+	<arg name="nbRobot" default="4" doc="Nombre de robots de la simu"/>
+
+	<node name="commande_locale"
+              pkg="aip_cf_commande_locale"
+              type="simulation"
+              output="screen"
+              launch-prefix="xterm -geometry '80x20+0+0' -e"
+              args="$(arg nbRobot)" />
+
+	<!--node name="display_node" 
+            pkg="commande_locale" 
+            type="display_node"/-->
+
+</launch>

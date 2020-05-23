@@ -1,0 +1,53 @@
+<launch>
+	<arg name="nbRobot" default="4"/>
+
+ 	<node name="commande"
+              pkg="aip_cf_commande"
+              type="run"
+              output="screen"
+              launch-prefix="xterm -geometry '80x20+550+0' -e"
+              args="$(arg nbRobot)"/>
+
+	<node name="aiguillage"
+              pkg="aip_cf_aiguillages"
+              type="run_Aiguillage"/>
+
+	<node name="Robot1"
+              pkg="aip_cf_robots"
+              type="robot"
+              output="screen"
+              launch-prefix="xterm -geometry '80x20+0+315' -e"
+              args="1"/>
+        
+	<node name="Robot2"
+              pkg="aip_cf_robots"
+              type="robot"
+              output="screen"
+              launch-prefix="xterm -geometry '80x20+550+315' -e"
+              args="2"/>
+        
+	<group if="$(eval arg('nbRobot')==4)">
+	  <node name="Robot3"
+                pkg="aip_cf_robots"
+                type="robot"
+                output="screen"
+                launch-prefix="xterm -geometry '80x20+0+607' -e"
+                args="3"/>
+	  <node name="Robot4"
+                pkg="aip_cf_robots"
+                type="robot"
+                output="screen"
+                launch-prefix="xterm -geometry '80x20+550+607' -e"
+                args="4"/>
+	</group>
+
+
+	<node name="shuttleManager"
+              pkg="aip_cf_shuttles"
+              type="main_ShuttleManager"/>
+        
+	<node name="log_manager"
+              pkg="aip_cf_commande_locale"
+              type="log_manager"/>
+
+</launch>
