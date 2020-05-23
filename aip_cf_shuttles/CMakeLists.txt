@@ -25,7 +25,9 @@ add_service_files(
 
 generate_messages(DEPENDENCIES std_msgs)
 
-catkin_package( CATKIN_DEPENDS roscpp message_runtime)
+catkin_package( CATKIN_DEPENDS roscpp message_runtime
+  LIBRARIES aip_cf_shuttles_capteurs
+  )
 
 include_directories(${catkin_INCLUDE_DIRS})
 

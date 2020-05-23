@@ -27,12 +27,10 @@ add_executable(run
   src/RobotsInterface.cpp
   src/AigsInterface.cpp)
 
-add_dependencies(run ${PROJECT_NAME}_gencpp
+add_dependencies(run
   ${catkin_EXPORTED_TARGETS}
-  aip_cf_shuttles
   )
 
 target_link_libraries(run ${catkin_LIBRARIES}
   ${OpenCV_LIBRARIES}
   )
-
