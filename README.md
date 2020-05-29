@@ -8,7 +8,7 @@ Le simulateur Coppellia est maintenant disponible à travers un fichier
 docker.
 
 
-# Installer la repostory
+# Installer la repository
 
 ```
 mkdir -p aip_cellule_flexible/src
