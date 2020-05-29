@@ -1,7 +1,7 @@
 /**** Bruno DATO, Abdellah ELGOURAIN, Evgeny SHULGA M1 EEA ISTR
       Université Paul Sabatier Toulouse III 2016 ****/
 
-#include "capteurs.h"
+#include "aip_cf_shuttles/capteurs.h"
 
 Capteurs::Capteurs(ros::NodeHandle noeud)
 {

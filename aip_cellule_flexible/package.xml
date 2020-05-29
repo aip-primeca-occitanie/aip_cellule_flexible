@@ -4,9 +4,11 @@
   <description>
     This metapackage provides the need packages to interact with the factory cell.
   </description>
-  <maintainer email="marco@univ-tlse3.fr"></maintainer>
+  <maintainer email="marco@univ-tlse3.fr">Fabien Marco</maintainer>
   <license>BSD</license>
-  
+
+  <buildtool_depend>catkin</buildtool_depend>
+
   <export>
     <metapackage />
   </export>

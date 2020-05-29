@@ -13,7 +13,9 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
 )
 
-add_message_files(FILES Capteurs.msg Actionneurs.msg ExchangeSh.msg Msg_SensorState.msg)
+add_message_files(FILES
+  Capteurs.msg Actionneurs.msg
+  ExchangeSh.msg Msg_SensorState.msg)
 
 generate_messages(DEPENDENCIES std_msgs)
 catkin_package(CATKIN_DEPENDS roscpp message_runtime)
@@ -25,4 +27,8 @@ include_directories(include ${OpenCV_INCLUDE_DIRS})
 
 add_executable(run_Aiguillage src/main_aiguillage.cpp src/Aiguillage.cpp)
 target_link_libraries(run_Aiguillage ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-add_dependencies(run_Aiguillage ${PROJECT_NAME}_gencpp ${catkin_EXPORTED_TARGETS})
+add_dependencies(run_Aiguillage
+  ${PROJECT_NAME}_gencpp
+  ${catkin_EXPORTED_TARGETS}
+  aip_cf_aiguillages_generate_messages_cpp
+)

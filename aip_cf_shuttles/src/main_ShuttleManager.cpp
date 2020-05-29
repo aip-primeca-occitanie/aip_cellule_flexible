@@ -3,7 +3,7 @@
 #include <queue>
 #include "FileAttente.h"
 #include <std_msgs/Int32.h>
-#include "capteurs.h"
+#include "aip_cf_shuttles/capteurs.h"
 #include <std_msgs/Byte.h>
 #include "aip_cf_shuttles/Msg_Erreur.h"
 
